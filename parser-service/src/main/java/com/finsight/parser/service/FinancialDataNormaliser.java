@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -57,7 +58,7 @@ public class FinancialDataNormaliser {
         return metrics;
     }
 
-    private java.util.Optional<Double> extractMetric(
+    private Optional<Double> extractMetric(
             String text, Pattern pattern, String metricName) {
         try {
             Matcher matcher = pattern.matcher(text);
