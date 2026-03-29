@@ -1,4 +1,4 @@
-package com.finsight.agent_service;
+package com.finsight.agent;
 
 import org.junit.jupiter.api.Test;
 

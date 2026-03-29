@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.finsight.agent-service' is invalid and this project uses 'com.finsight.agent_service' instead.
+* The original package name 'com.finsight.agent-service' is invalid and this project uses 'com.finsight.agent instead.
 
 # Getting Started
 
