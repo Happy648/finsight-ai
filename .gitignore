@@ -76,3 +76,9 @@ bin/
 
 .DS_Store
 Thumbs.db
+
+
+# Environment and secrets — NEVER commit these
+.env
+*.env
+.env.local
