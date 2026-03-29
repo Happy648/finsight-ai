@@ -1,0 +1,38 @@
+[versions]
+spring-boot            = "4.0.3"
+spring-cloud           = "2025.0.0"
+spring-cloud-contract  = "4.2.0"
+pdfbox                 = "3.0.2"
+cucumber               = "7.18.0"
+testcontainers         = "1.20.1"
+mapstruct              = "1.6.0"
+lombok                 = "1.18.34"
+
+[libraries]
+spring-boot-starter-web            = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-starter-data-mongodb   = { module = "org.springframework.boot:spring-boot-starter-data-mongodb" }
+spring-boot-starter-actuator       = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-kafka                       = { module = "org.springframework.kafka:spring-kafka" }
+
+spring-retry                       = { module = "org.springframework.retry:spring-retry" }
+spring-aspects                     = { module = "org.springframework:spring-aspects" }
+
+pdfbox                             = { module = "org.apache.pdfbox:pdfbox", version.ref = "pdfbox" }
+
+spring-cloud-contract-stub-runner  = { module = "org.springframework.cloud:spring-cloud-starter-contract-stub-runner", version.ref = "spring-cloud-contract" }
+spring-cloud-contract-verifier     = { module = "org.springframework.cloud:spring-cloud-contract-gradle-plugin", version.ref = "spring-cloud-contract" }
+
+cucumber-java                      = { module = "io.cucumber:cucumber-java", version.ref = "cucumber" }
+cucumber-spring                    = { module = "io.cucumber:cucumber-spring", version.ref = "cucumber" }
+cucumber-junit5                    = { module = "io.cucumber:cucumber-junit-platform-engine", version.ref = "cucumber" }
+
+testcontainers-kafka               = { module = "org.testcontainers:kafka", version.ref = "testcontainers" }
+testcontainers-mongodb             = { module = "org.testcontainers:mongodb", version.ref = "testcontainers" }
+
+lombok                             = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mapstruct                          = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+
+[plugins]
+spring-boot            = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-mgmt = { id = "io.spring.dependency-management", version = "1.1.7" }
+spring-cloud-contract  = { id = "org.springframework.cloud.contract", version.ref = "spring-cloud-contract" }
