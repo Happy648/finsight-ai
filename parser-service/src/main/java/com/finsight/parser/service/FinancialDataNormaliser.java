@@ -48,8 +48,7 @@ public class FinancialDataNormaliser {
 
         // anomaly flags — agent-service uses these as hints
         metrics.put("hasNegativeNetIncome",
-                metrics.containsKey("netIncome") &&
-                        rawText.toLowerCase().contains("net loss"));
+                rawText.toLowerCase().contains("net loss"));
 
         metrics.put("missingRevenue", !metrics.containsKey("revenue"));
         metrics.put("missingCashFlow", !metrics.containsKey("cashFlow"));
