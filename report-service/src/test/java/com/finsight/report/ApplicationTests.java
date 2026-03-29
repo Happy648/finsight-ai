@@ -1,4 +1,4 @@
-package com.finsight.report_service;
+package com.finsight.report;
 
 import org.junit.jupiter.api.Test;
 
