@@ -1,6 +1,6 @@
 package com.finsight.ingestion.service;
 
-import com.finsight.ingestion.kafka.PdfUploadedProducer;
+import com.finsight.ingestion.service.kafka.PdfUploadedProducer;
 import com.finsight.ingestion.model.PdfDocument;
 import com.finsight.ingestion.model.PdfDocument.DocumentStatus;
 import com.finsight.ingestion.repository.PdfDocumentRepository;

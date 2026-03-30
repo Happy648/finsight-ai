@@ -1,4 +1,4 @@
-package com.finsight.parser.kafka;
+package com.finsight.parser.service.kafka;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.finsight.parser.event.PdfUploadedEvent;

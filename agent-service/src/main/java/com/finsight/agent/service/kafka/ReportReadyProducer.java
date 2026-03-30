@@ -1,4 +1,4 @@
-package com.finsight.agent.kafka;
+package com.finsight.agent.service.kafka;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.finsight.agent.event.ReportReadyEvent;
